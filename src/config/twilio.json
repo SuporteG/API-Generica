@@ -1,0 +1,9 @@
+{
+    "accountSid": "AC95e5af2159c7d0993d7b6bfcc07e51f8",
+    "authToken": "6230af1cc43926a4e918664d49248b16",
+    "apiKey": "SK8584d2adcd51ea0e54a512383bea7f7a", 
+    "apiSecret": "rZYk4spHF52nemIu9K3SRgGVny2IGjyG",
+    "whatsapp" : {
+        "from": "whatsapp:+14155238886"
+    }
+}

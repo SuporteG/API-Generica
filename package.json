@@ -1,18 +1,23 @@
 {
-  "name": "crud1",
+  "name": "sgmessage",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "description": "Sistema de mensageria da Suporte Gerencial",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
   },
   "dependencies": {
+    "@twilio/live-player-sdk": "^1.0.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.2",
     "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.7",
     "nodemailer": "^6.7.2",
-    "nodemailer-express-handlebars": "^5.0.0"
-  }
+    "nodemailer-express-handlebars": "^5.0.0",
+    "twilio": "^3.75.1",
+    "twilio-video": "^2.21.1"
+  },
+  "author": "Rogerio Alencar Filho",
+  "license": "ISC"
 }

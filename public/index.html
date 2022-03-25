@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="videoDiv">
+    </div>
+    
+
+
+    <script src="//sdk.twilio.com/js/video/releases/2.17.1/twilio-video.min.js"></script>
+    <script src="@twilio/live-player-sdk/dist/build/twilio-live-player.js"></script>
+    <script>
+         ( async () => { 
+            const { Player } = Twilio.Live;
+            console.log(Player)
+            if (Player.isSupported) {
+              
+                const {
+                    host,
+                    protocol,
+                    } = window.location;
+
+                    console.log( host,protocol)
+
+                    // Join a live stream.
+                    // const player = await Player.connect('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzg1ODRkMmFkY2Q1MWVhMGU1NGE1MTIzODNiZWE3ZjdhLTE2NDc5OTIwNjYiLCJncmFudHMiOnsiaWRlbnRpdHkiOiJ1c2VyIiwidmlkZW8iOnsicm9vbSI6IlJNOGVmZmE3OTRlZjQ4NmJlYmMyYTcxZjllZWJlYWM4ODYifX0sImlhdCI6MTY0Nzk5MjA2NiwiZXhwIjoxNjQ3OTk1NjY2LCJpc3MiOiJTSzg1ODRkMmFkY2Q1MWVhMGU1NGE1MTIzODNiZWE3ZjdhIiwic3ViIjoiQUM5NWU1YWYyMTU5YzdkMDk5M2Q3YjZiZmNjMDdlNTFmOCJ9.3xgIT3cEysHSUJ2A_MoOQ-hnFPY5N3KmHCb6jbWkaywaccessToken', {
+                    //     playerWasmAssetsPath: `${protocol}//${host}/assets`,
+                    // });
+
+
+                    // player.on(Player.Event.StateChanged, (state) => {
+                    //     switch (state) {
+                    //         case Player.State.Buffering:
+                    //         /**
+                    //          * The player is buffering content.
+                    //          */
+                    //         case Player.State.Ended:
+                    //         /**
+                    //          * The stream has ended.
+                    //          */
+                    //         case Player.State.Idle:
+                    //         /**
+                    //          * The player has successfully authenticated and is loading the stream. This
+                    //          * state is also reached as a result of calling player.pause().
+                    //          */
+                    //         case Player.State.Playing:
+                    //         /**
+                    //          * The player is now playing a stream. This state occurs as a result of calling
+                    //          * player.play().
+                    //          */
+                    //         case Player.State.Ready:
+                    //         /**
+                    //          * The player is ready to play back the stream.
+                    //          */
+                    //     }
+                    // });
+
+            } else {
+                alert('nao tem suporte')
+            }
+        })()
+           
+    </script>
+
+</body>
+</html>

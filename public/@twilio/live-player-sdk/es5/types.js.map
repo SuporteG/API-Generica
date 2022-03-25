@@ -1,0 +1,1 @@
+{"version":3,"file":"types.js","sourceRoot":"","sources":["../lib/types.ts"],"names":[],"mappings":"","sourcesContent":["/**\n * @private\n */\n declare global {\n  interface Window {\n    Twilio: Object & {\n      Live?: { Player?: any },\n    };\n  }\n}\n\n/**\n * @private\n */\nexport type RequestCredentials = 'omit' | 'same-origin' | 'include';\n"]}
